@@ -1,0 +1,29 @@
+.footer__container{
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 100vh;
+    margin-top: 30%;
+    background: rgb(51, 46, 47);
+}
+
+.information{
+    text-align: center;
+    color: darkcyan;
+    width: 100%;
+    line-height: 70px;
+}
+
+.information:hover{
+    cursor: context-menu;
+}
+
+@media (max-width: 768px){
+    .footer__container{
+       top: auto;
+       height: min-content;
+    }
+    .information{
+        font-size: 10px;
+    }
+}

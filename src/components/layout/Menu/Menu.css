@@ -1,0 +1,90 @@
+*{
+    text-decoration: none;
+}
+
+.menu__container{
+    margin: 0 10px 10px 0px;
+    color: white;
+    background: rgb(51, 46, 47);
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    font-size: 14px;
+}
+
+.menu__title{
+    margin: 10px;
+    margin-bottom: 10px;
+    font-size: 4em;
+        background: -webkit-linear-gradient(darkcyan,white);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: white;
+}
+
+.menu__{
+    margin: 10px;
+    transition: right .5s;
+}
+
+.link{
+    font-size: 1.5em ;
+    color: white;
+    margin: 10px;
+    list-style: none;
+}
+
+.link:hover{
+    text-decoration: underline;
+    color: darkcyan;
+}
+
+.menu__toggle{
+    margin-top: 10px;
+    background: url("../../../assets/menu.png") no-repeat;
+    background-position: center;
+    border: none;
+    height: 50px;
+    width: 40px;
+    position: relative;
+    right: 0;
+    width: 100%;
+    display: none;
+}
+
+@media (max-width:768px){
+    .menu__title{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .menu__{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        background: rgb(77, 68, 70);
+        left: 200%;
+        width: 100%;
+        height: calc(100%-20px);
+        margin: auto;
+        transition: left .5s;
+        align-items: center;
+        justify-content: center;
+        overflow-y: auto;
+    }
+
+    .link{
+        padding: 20px;
+    }
+
+    .menu__toggle{
+        display: block;
+    }
+
+    .menu__visible{
+        left: 0;
+    }
+
+}
+
