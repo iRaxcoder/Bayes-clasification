@@ -7,7 +7,7 @@
 h2{
     font-size: 2em;
     margin: 5px;
-    background: -webkit-linear-gradient(#008b8b,rgb(69, 66, 66));
+    background: -webkit-linear-gradient(#EE5007,#B22727);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         color: white;
@@ -26,7 +26,7 @@ li{
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(4,25%);
-    background:#dce4e4;
+    background:#f1cdbd;
     grid-auto-rows: minmax(auto,auto);
     -webkit-box-shadow: 2px 1px 21px -5px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px 1px 21px -5px rgba(0,0,0,0.75);
@@ -74,7 +74,7 @@ li{
 
 .form__item_group{
     padding: 10px;
-    background:rgb(220, 228, 228);
+    background:#f1cdbd;
     margin-bottom: 10px;
 }
 .algorithm__form > label{
@@ -127,7 +127,6 @@ select{
 
     .form__item_group{
         padding: 10px;
-        background:rgb(220, 228, 228);
         margin-bottom: 10px;
     }
     .algorithm__form > label{
@@ -144,6 +143,4 @@ select{
     .result__{
         overflow-x: scroll;
     }
-
-    
 }

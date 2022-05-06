@@ -4,12 +4,12 @@
     position: absolute;
     top: 100vh;
     margin-top: 30%;
-    background: rgb(51, 46, 47);
+    background: #006E7F;
 }
 
 .information{
     text-align: center;
-    color: darkcyan;
+    color: #F8CB2E;
     width: 100%;
     line-height: 70px;
 }

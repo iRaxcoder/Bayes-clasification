@@ -1,5 +1,5 @@
 .instruction{
-    border: 1px solid rgb(39, 131, 131);
+    border: 1px solid #EE5007;
     border-radius: 5px;
     padding: 10px;
 }
@@ -13,20 +13,18 @@
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
-    background-color: rgb(201, 213, 213);
+    background-color: #edb096;
 }
 
 .response__item:hover{
-    background: -webkit-linear-gradient(rgb(138, 192, 192),rgb(69, 66, 66));
-    -webkit-text-fill-color: white;
-    color: white;
+    background: -webkit-linear-gradient(#f6996d,#e9d58e);
 }
 
 .calc__button{
     width: 97.5%;
     margin: 5px 20px 20px;
     height: max-content;
-    background: rgb(51, 46, 47);
+    background: #006E7F;
     color: white;
     border-radius: 4px;
     font-size: 1.5em;
@@ -34,7 +32,7 @@
 }
 
 .calc__button:hover{
-    color: rgb(116, 197, 197);
+    color: #F8CB2E;
     -webkit-box-shadow: 0px 14px 23px -14px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 14px 23px -14px rgba(0,0,0,0.75);
     box-shadow: 0px 14px 23px -14px rgba(0,0,0,0.75);

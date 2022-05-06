@@ -1,3 +1,20 @@
-.response__container{
-    grid-template-columns: repeat(2,1fr);
+.response__container_{
+    margin: 20px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,50%);
+    background:#f1cdbd;
+    grid-auto-rows: minmax(auto,auto);
+    -webkit-box-shadow: 2px 1px 21px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 1px 21px -5px rgba(0,0,0,0.75);
+    box-shadow: 2px 1px 21px -5px rgba(0,0,0,0.75);
+    border-radius: 10px;
+}
+
+@media (max-width: 768px){
+    .response__container_{
+        grid-template-columns: repeat(2,1fr);
+        overflow-x: auto;
+        margin: auto;
+    }
 }
