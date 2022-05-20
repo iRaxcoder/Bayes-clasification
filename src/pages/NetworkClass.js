@@ -3,6 +3,7 @@ import CalcButton from '../components/CalcButton';
 import { useForm } from "react-hook-form";
 import ResponseItem from "../components/ResponseItem";
 import { useState } from "react";
+import exercise from '../service/exercise'
 const NetworkClass = () => {
     const instructions = [
         "Con el fin de poder clasificar la clase de red (A o B), se encuentra el presente algoritmo.",
@@ -13,7 +14,9 @@ const NetworkClass = () => {
      const [isLoading, setIsloading] = useState(false);
      const [result, setResult]=useState(null);
      const handleResults = (data) => {
-        
+        exercise.getClassType(data).then(response=>{
+            setResult(response);
+        });
     }
     return (
         <div className="container__">

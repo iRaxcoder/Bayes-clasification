@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import CalcButton from "../components/CalcButton";
 import ResponseItem from "../components/ResponseItem";
 import { useState } from "react";
+import exercise from "../service/exercise";
 
 const GuessLearningStyle = () => {
     const { register, handleSubmit,formState: { errors } } = useForm();
@@ -14,7 +15,9 @@ const GuessLearningStyle = () => {
      const [isLoading, setIsloading] = useState(false);
      const [result, setResult]=useState(null);
     const handleResults = (data) => {
-        
+        exercise.getGuessStyle({genre: data.genre, avr: Number(data.avr), place: data.place}).then(response=>{
+            setResult(response);
+        });
     }
     return (
         <div className="container__">

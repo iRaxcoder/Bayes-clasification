@@ -3,7 +3,7 @@ import { useState } from 'react';
 import CalcButton from '../components/CalcButton';
 import { useForm } from "react-hook-form";
 import SectionHeader from '../components/layout/SectionHeader/SectionHeader';
-
+import exercise from '../service/exercise'
 const LearningStyle = () => {
    const instructions = [
        "Para utilizar el instrumento usted debe conceder una calificación alta a aquellas palabras que mejor caracterizan la forma en que usted aprende, y una calificación baja a las palabras que menos caracterizan su estilo de aprendizaje.",
@@ -38,7 +38,9 @@ const LearningStyle = () => {
         parseInt(d["7"])+parseInt(d["16"])+parseInt(d["25"])+parseInt(d["34"])+parseInt(d["8"])+parseInt(d["17"])+parseInt(d["26"])+
         parseInt(d["35"])+parseInt(d["9"])+parseInt(d["18"])+parseInt(d["27"])+parseInt(d["36"])
         });
-        setIsloading(true);
+        exercise.getLearningStyle({ec:styles.ec,or:styles.or,ca:styles.ca,ea:styles.ea}).then(response=>{
+                setResult(response);
+              });
 //     console.log("Valor de ec: "+ ec + " Valor de or: "+ or + " Valor de ca: "+ ca + " Valor de ea: "+ ea);
    }
     return (
