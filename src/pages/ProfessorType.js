@@ -102,7 +102,7 @@ const ProfessorType = () => {
       </form>
       {result ? (
         <div className="result__">
-          <p>¡Su tipo es: {result}!</p>
+          <p>{result}</p>
         </div>
       ) : (
         <></>

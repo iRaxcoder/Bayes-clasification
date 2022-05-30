@@ -78,7 +78,7 @@ const OriginPlace = () => {
       </form>
       {result ? (
         <div className="result__">
-          <p>¡Su recinto es: {result}!</p>
+          <p>{result}</p>
         </div>
       ) : (
         <></>

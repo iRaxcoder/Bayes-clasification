@@ -80,7 +80,7 @@ const StudenGenre = () => {
       </form>
       {result ? (
         <div className="result__">
-          <p>¡Su sexo es: {result}!</p>
+          <p>{result}</p>
         </div>
       ) : (
         <></>

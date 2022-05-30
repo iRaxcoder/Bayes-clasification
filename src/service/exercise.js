@@ -70,7 +70,7 @@ const exercise = {
     },
     getClassType: async (data) => {
         //loading.style.display="block";
-        const response = await axios.post(BASE_URL+"class-type", { data })
+        const response = await axios.post(BASE_URL+"network-class", { data })
             .then((response) => {
                 return response.data;
             }).catch(error => {

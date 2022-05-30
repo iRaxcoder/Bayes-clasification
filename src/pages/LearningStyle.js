@@ -101,7 +101,7 @@ const LearningStyle = () => {
         {
         result?
                 <div className="result__">
-                        <p>¡Su estilo de aprendizaje es: {result}!</p>
+                        <p>{result}</p>
                 </div>
        :
                 <></>

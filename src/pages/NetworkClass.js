@@ -49,7 +49,7 @@ const NetworkClass = () => {
             {
                 result?
                         <div className="result__">
-                                <p>¡La clase de red es: {result}!</p>
+                                <p>{result}</p>
                         </div>
                     :
                         <></>
