@@ -1,6 +1,6 @@
 import axios from "axios";
 
-var BASE_URL= "http://localhost:4000/";
+var BASE_URL= "https://bayes-classification-server.vercel.app/";
 
 const exercise = {
     getLearningStyle: async (data) => {
